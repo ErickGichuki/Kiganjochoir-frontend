@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function page() {
+function Hero() {
   return (
     <div className='bg-herocolor pt-4'>
       <div className='h-100 mx-auto max-w-8xl py-6 px-6 flex flex-col md:flex-row justify-between items-center'>
@@ -34,4 +34,4 @@ function page() {
   )
 }
 
-export default page
+export default Hero
