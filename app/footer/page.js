@@ -28,19 +28,19 @@ function Footer() {
                     <Link href='/' className='transition duration-300'>Instagram</Link>
                 </div>
             </div>
-            <div className='text-center md:text-left '>
+            <div className='mb-4'>
                 <h3 className='text-lg font-semibold mb-4'>Volumes</h3>
-                <div className='flex flex-col space-y-4'>
+                <div className='flex flex-col space-y-2'>
                     <Link href='/' className='mt-4'>Volume 1</Link>
                     <Link href='/' className='mt-4'>Volume 2</Link>
                 </div>
             </div>
         </div>
-      <div className='mt-12 text-center'>
-        <p className='text-md'>
-            &copy; {new Date().getFullYear()} SDA Kiganjo Church Choir. All Rights Reserved.
-        </p>
-      </div>
+        <div className='mt-8 border-t border-yellow-400 pt-6 text-center'>
+            <p className='text-md'>
+                &copy; {new Date().getFullYear()} SDA Kiganjo Church Choir. All Rights Reserved.
+            </p>
+        </div>
       </div>
     </div>
   )
