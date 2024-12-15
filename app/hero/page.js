@@ -55,7 +55,7 @@ function Hero() {
         </div>
         <div className='mt-8 md:mt-0'>
             <div className='flex flex-col justify-center space-y-4 up-down h-80 w-full'>
-                <Image src='/choir.png' alt='choir' width={440} height={256} className='rounded-full' />
+                <Image src='/choir.png' alt='choir' width={256} height={256} className='rounded-full w-64 h-64 animate-spin-slow' />
             </div>
         </div>
       </div>
