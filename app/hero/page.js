@@ -1,9 +1,34 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 function Hero() {
+    const [text, setText] = useState('');
+    const [color, setColor] = useState('text-red-600');
+    const fullText = 'Let everything that has breath praise the Lord. As we behold the presence of the Lord it is always good to sing with spirit and understanding. Amen'
 
+    useEffect(()=>{
+        let index = 0;
+        const intervalId = setInterval(() => {
+            if (index < fullText.length) {
+                const currentChar = fullText[index];
+                if (currentChar) {
+                    setText((prevText) => prevText + currentChar);
+                }
+                if (index < fullText.length / 3) {
+                    setColor('text-red-600');
+                } else if (index < (2 * fullText.length) / 3){
+                    setColor('text-violet-600');
+                } else {
+                    setColor('text-black');
+                }
+                index += 1;
+            } else{
+                clearInterval(intervalId);
+            }
+        }, 100);
+        return () => clearInterval(intervalId);
+    }, []);
   return (
     <div className='bg-herocolor pt-4'>
       <div className='h-100 mx-auto max-w-8xl py-6 px-6 flex flex-col md:flex-row justify-between items-center'>
@@ -14,8 +39,8 @@ function Hero() {
             <h3 className='text-md mb-2'>
                 that transforms
             </h3>
-            <p className='text-md mb-6'>
-                Let everything that has breath praise the Lord. As we behold the presence of the Lord it is always good to sing with spirit and understanding. Amen
+            <p className={`mt-2 mb-6 text-md ${color}`}>
+                {text}
             </p>
             <div className='space-x-5'>
                 <a 
