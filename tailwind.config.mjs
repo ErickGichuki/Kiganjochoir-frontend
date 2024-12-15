@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'purplefortitle': '#E514E1',
+        'signupcolor': '#E37633',
+        'signuphover': '#E36533',
+        'herocolor': '#B8B29A',
+        'songsbutton': '#FF5400',
       },
     },
   },
