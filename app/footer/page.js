@@ -38,7 +38,7 @@ function Footer() {
         </div>
         <div className='mt-8 border-t border-yellow-400 pt-6 text-center'>
             <p className='text-md'>
-                &copy; {new Date().getFullYear()} SDA Kiganjo Church Choir. All Rights Reserved.
+                &copy;{new Date().getFullYear()} SDA Kiganjo Church Choir. All Rights Reserved.
             </p>
         </div>
       </div>
