@@ -26,7 +26,7 @@ function Navbar() {
             <Link href='/aboutus' className=''>
                 About us
             </Link>
-            <Link href='/songs' className=''>
+            <Link href='/recordedsongs' className=''>
                 Songs
             </Link>
             <Link href='/contact' className=''>
