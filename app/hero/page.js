@@ -34,7 +34,7 @@ function Hero() {
       <div className='h-100 mx-auto max-w-8xl py-6 px-6 flex flex-col md:flex-row justify-between items-center'>
         <div className='mt-8 md:mr-8'>
             <h1 className='font-bold text-2xl'>
-                Heavenly Music
+                Heavenly <span className='text-violet-700'>Music</span>
             </h1>
             <h3 className='text-md mb-2'>
                 that transforms
