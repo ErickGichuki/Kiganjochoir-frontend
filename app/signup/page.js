@@ -11,11 +11,9 @@ const SignupPage = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Toggle password visibility
   const togglePasswordVisibility = () => setPasswordVisible(!passwordVisible);
   const toggleConfirmPasswordVisibility = () => setConfirmPasswordVisible(!confirmPasswordVisible);
 
-  // Formik form setup
   const formik = useFormik({
     initialValues: {
       username: '',
