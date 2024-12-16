@@ -44,7 +44,7 @@ function Page() {
         <div className='space-y-6'>
           {songs.map((song, index) => (
             <div key={song.id} className='bg-white shadow-lg rounded-lg pb-6 mb-4 mx-6 p-2'>
-              <h3 className='text-xl text-blue-800 font-semibold text-center'>{index + 1}. {song.title}</h3>
+              <h3 className='text-xl text-blue-800 font-semibold text-start'>{index + 1}. {song.title}</h3>
               <audio controls controlsList='nodownload' className='w-full mt-4'>
                 <source src={song.audio} type='audio/mpeg' />
                 Your browser does not support the audio element.
