@@ -27,24 +27,35 @@ function TrainerDashboard() {
 
   return (
     <div
-      className='relative min-h-screen bg-cover bg-center bg-no-repeat'
+      className='relative min-h-screen bg-cover bg-center'
       style={{ backgroundImage: `url(/choir.png)` }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay to improve text visibility */}
-
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6 absolute top-1/2 transform -translate-y-1/2 w-full px-4">
-        <Link href='/createsong' className='bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition'>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute top-24 left-0 w-full p-4 flex justify-center items-center z-50">
+        <nav className='flex space-x-4'>
+        <Link href='/createsong' className='bg-violet-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-violet-700 transition'>
           Create Song
         </Link>
-        <Link href='/contact' className='bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition'>
+        <Link href='/message' className='bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition'>
           Messages
         </Link>
-        <button onClick={handleLogout} className='bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition'>
+        <button onClick={handleLogout} className='bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition'>
           Logout
         </button>
-        <Link href='/updateproducts' className='bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition'>
-          Manage Songs
-        </Link>
+        </nav>
+      </div>
+      <div className='flex flex-col items-center justify-center min-h-screen text-center relative z-10'>
+        <h2 className='text-3xl font-bold mt-12 text-white mb-12'>
+          Welcome to Trainers Dashboard!!
+        </h2>
+        <div className='flex space-x-8'>
+          <Link
+          href='/updatesong'
+          className='bg-orange-500 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded text-xl'
+          >
+            Manage Songs
+          </Link>
+        </div>
       </div>
     </div>
   )
