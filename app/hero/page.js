@@ -5,7 +5,7 @@ import Image from 'next/image'
 function Hero() {
     const [text, setText] = useState('');
     const [color, setColor] = useState('text-red-600');
-    const fullText = 'Let everything that has breath praise the Lord. Sing with the spirit and understanding the octave of redemption is Jesus Chist our Lord! Amen'
+    const fullText = 'Let everything that has breath praise the Lord.'
 
     useEffect(()=>{
         let index = 0;
@@ -39,8 +39,11 @@ function Hero() {
             <h3 className='text-lg mb-2'>
                 that transforms
             </h3>
-            <p className={`mt-2 mb-6 text-md ${color}`}>
+            <p className={`mt-2  text-md ${color}`}>
                 {text}
+            </p>
+            <p className='text-md mb-4'>
+                Sing with the spirit and understanding the octave of redemption is Jesus Chist our Lord! Amen
             </p>
             <div className='space-x-5'>
                 <a 

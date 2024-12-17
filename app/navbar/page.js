@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-blue-300 top-0 left-0 w-full z-50">
+      <div className="bg-blue-400 top-0 left-0 w-full z-50">
         <div className="flex justify-between items-center px-4 py-4">
           <div className="flex items-center space-x-4">
             <img src="/logo.png" alt="logo" className="w-12 h-12 rounded-full" />
@@ -57,7 +57,7 @@ function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-blue-300 transform ${
+        className={`fixed top-0 left-0 h-full w-64 bg-blue-400 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 z-40 shadow-lg`}
       >
