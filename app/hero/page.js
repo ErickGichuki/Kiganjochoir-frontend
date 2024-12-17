@@ -5,7 +5,7 @@ import Image from 'next/image'
 function Hero() {
     const [text, setText] = useState('');
     const [color, setColor] = useState('text-red-600');
-    const fullText = 'Let everything that has breath praise the Lord. As we behold the presence of the Lord it is always good to sing with spirit and understanding. Amen'
+    const fullText = 'Let everything that has breath praise the Lord. Sing with the spirit and understanding the octave of redemption is Jesus Chist our Lord! Amen'
 
     useEffect(()=>{
         let index = 0;
@@ -32,11 +32,11 @@ function Hero() {
   return (
     <div className='bg-herocolor pt-4'>
       <div className='h-100 mx-auto max-w-8xl py-6 px-6 flex flex-col md:flex-row justify-between items-center'>
-        <div className='mt-8 md:mr-8'>
+        <div className='mt-4 md:mr-8'>
             <h1 className='font-bold text-2xl'>
                 Heavenly <span className='text-violet-700'>Music</span>
             </h1>
-            <h3 className='text-md mb-2'>
+            <h3 className='text-lg mb-2'>
                 that transforms
             </h3>
             <p className={`mt-2 mb-6 text-md ${color}`}>
@@ -48,8 +48,11 @@ function Hero() {
                     href='/recordedsongs'>
                     Our Songs
                 </a>
-                <a className='bg-white text-songsbutton font-semibold py-3 px-4 rounded-3xl mb-8 hover:bg-songsbutton hover:text-white'>
-                    Get Started
+                <a 
+                    className='bg-white text-songsbutton font-semibold py-3 px-4 rounded-3xl mb-8 hover:bg-songsbutton hover:text-white'
+                    href='/contact'
+                    >
+                    Get in Touch
                 </a>
             </div>
         </div>

@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className='py-8'>
+    <div className='bg-blue-300 py-8'>
         <div className='container mx-auto px-6 md:px-12'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
             <div className='mb-4'>
                 <h3 className='text-xl font-bold mb-2'>SDA Kiganjo Church Choir</h3>
-                <p className='text-md'>We love you cherish you and of course we mean it! <br/> We welcome all our visitors to our church every Sabbath. <br/></p>
+                <p className='text-md'>We are a dedicated team in the ministry to propel the message of the 3 Angels Message to all the world in our generation. <br/>Rev 14:6-12</p>
             </div>
             <div className='mb-4'>
                 <h3 className='text-lg font-bold mb-2'>Quick Links</h3>
@@ -36,7 +36,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className='mt-8 border-t border-yellow-400 pt-6 text-center'>
+        <div className='mt-8 border-t border-white pt-6 text-center'>
             <p className='text-md'>
                 &copy;{new Date().getFullYear()} SDA Kiganjo Church Choir. All Rights Reserved.
             </p>

@@ -93,7 +93,7 @@ return (
               <p className="text-red-500 text-sm">{formik.errors.email}</p>
             )}
 
-<div className="relative">
+            <div className="relative">
               <input
                 type={showPassword ? 'text' : 'password'}
                 name="password"
@@ -113,7 +113,7 @@ return (
               <p className="text-red-500 text-sm">{formik.errors.password}</p>
             )}
 
-<div className="relative">
+            <div className="relative">
               <input
                 type={showConfirmPassword ? 'text' : 'password'}
                 name="confirmPassword"

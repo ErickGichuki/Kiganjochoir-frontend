@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 function LoginPage() {
   const [errorMessage, setErrorMessage] = useState('');
   const router = useRouter();
+  const [see, setSee] = useState("");
 
   const formik = useFormik({
     initialValues: {
@@ -50,7 +51,7 @@ function LoginPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
+      <h2 className="text-xl font-bold mb-4">Welcome to the ministry</h2>
 
       {/* Display error message if any */}
       {errorMessage && <div className="text-red-500 mb-4">{errorMessage}</div>}
@@ -61,6 +62,7 @@ function LoginPage() {
           <input
             id="email"
             type="text"
+            placeholder='Enter your email address'
             {...formik.getFieldProps('email')}
             className="w-full px-3 py-2 border border-gray-300 rounded"
           />
@@ -71,12 +73,22 @@ function LoginPage() {
 
         <div className="mb-4">
           <label htmlFor="password" className="block text-gray-700">Password</label>
+          <div className='relative'>
           <input
             id="password"
-            type="password"
+            type={see ? 'text' : 'password'}
+            placeholder="Enter your password"
             {...formik.getFieldProps('password')}
             className="w-full px-3 py-2 border border-gray-300 rounded"
           />
+          <button
+          type='button'
+          onClick={() => setSee((prev) => !prev)}
+          className='absolute right-3 top-3'
+          >
+            {see ? 'Hide' : 'Show'}
+          </button>
+          </div>
           {formik.touched.password && formik.errors.password && (
             <div className="text-red-500 text-sm">{formik.errors.password}</div>
           )}

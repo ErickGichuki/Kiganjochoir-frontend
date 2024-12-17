@@ -16,10 +16,10 @@ function Navbar() {
 
   return (
     <>
-      <div className="top-0 left-0 w-full z-50 bg-white">
+      <div className="bg-blue-300 top-0 left-0 w-full z-50">
         <div className="flex justify-between items-center px-4 py-4">
           <div className="flex items-center space-x-4">
-            <img src="/logo.png" alt="logo" className="w-12 h-12" />
+            <img src="/logo.png" alt="logo" className="w-12 h-12 rounded-full" />
             <Link href="/" className="text-xl font-bold">
               SDA Kiganjo <span className="text-purplefortitle">Church Choir</span>
             </Link>
@@ -37,8 +37,8 @@ function Navbar() {
              <Link href='/contact' className=''>
                  Contact
              </Link>
-             <Link href='/signup' className='bg-signupcolor text-white px-4 py-2 rounded-full hover:bg-signuphover transition duration-300'>
-                 SignUp
+             <Link href='/login' className='bg-signupcolor text-white px-4 py-2 rounded-full hover:bg-signuphover transition duration-300'>
+                 Login
              </Link>
          </div>
           <button
@@ -57,13 +57,13 @@ function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-gray-400 transform ${
+        className={`fixed top-0 left-0 h-full w-64 bg-blue-300 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 z-40 shadow-lg`}
       >
-        <div className="p-6 flex flex-col space-y-6">
+        <div className="p-6 flex flex-col space-y-6 items-center justify-center">
           <button
-            className="self-end p-2 text-purplefortitle focus:outline-none"
+            className="self-end py-2 bg-yellow-500 rounded-full px-4 focus:outline-none"
             onClick={closeSidebar}
           >
             Close
@@ -81,11 +81,11 @@ function Navbar() {
             Contact
           </Link>
           <Link
-            href="/signup"
-            className="text-lg font-medium bg-signupcolor text-white px-4 py-2 rounded-md hover:bg-signuphover transition"
+            href="/login"
+            className="text-lg font-medium bg-signupcolor text-white px-4 py-2 rounded-full hover:bg-signuphover transition"
             onClick={closeSidebar}
           >
-            Sign Up
+            Login
           </Link>
         </div>
       </div>
