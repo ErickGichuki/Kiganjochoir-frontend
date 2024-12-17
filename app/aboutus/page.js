@@ -1,5 +1,5 @@
 'use client'
-import { FaUsers, FaEye, FaBullseye } from 'react-icons/fa'
+import { FaUsers, FaBullseye, FaGlobe, FaMusic } from 'react-icons/fa'
 import React from 'react'
 import Image from 'next/image'
 
@@ -26,11 +26,11 @@ function About() {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <Image
-              src="/choirstory.png" // Replace with your image path
+              src="/choirstory.png"
               alt="Our Story"
               width={400}
               height={400}
-              className="rounded-t object-cover h-64 w-full md:w-96"
+              className="border-r border-green-300 rounded-sm object-cover h-64 w-full md:w-96"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ function About() {
 
           {/* Mission */}
           <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md hover:ring-4 hover:ring-green-500 transition duration-300">
-            <FaEye className="text-4xl text-blue-500 mb-4 mx-auto" />
+            <FaGlobe className="text-4xl text-blue-500 mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2 text-gray-800">
               Our Mission
             </h3>
@@ -65,7 +65,7 @@ function About() {
 
           {/* Vision */}
           <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md hover:ring-4 hover:ring-yellow-500 transition duration-300">
-            <FaBullseye className="text-4xl text-blue-500 mb-4" />
+            <FaMusic className="text-4xl text-blue-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-800">
               Our Vision
             </h3>
