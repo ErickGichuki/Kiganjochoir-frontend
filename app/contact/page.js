@@ -41,11 +41,11 @@ function ContactPage() {
   return (
     <div className='pt-2 bg-gray-100 mt-6 mb-4 min-h-screen'>
       <div className='max-w-6xl mx-auto px-4'>
-        <h2 className='text-3xl font-bold text-center mb-10'>Talk to us.</h2>
+        <h2 className='text-3xl font-bold text-center mb-8'>Talk to us</h2>
         <div className='flex flex-col md:flex-row gap-8'>
             <div className='md:w-1/2'>
                 <h3 className='text-2xl font-semibold mb-4'>
-                    Heard us before? <span className='text-purple-500'>we spread the gospel of the kingdom</span>
+                    Heard us before? <span className='text-blue-500'>we proclaim the gospel of the kingdom</span>
                 </h3>
                 <p className='text-lg text-gray-700 mb-8'>
                     If you got any question kindly get in touch with us so that we can help you and know more about Jesus.
@@ -90,11 +90,11 @@ function ContactPage() {
             </div>
             <div className='md:w-1/2'>
                 <Image
-                src="/logo.png"
+                src="/contactus.png"
                 alt='contact'
-                className='w-32 h-32 rounded-full'
-                width={256}
-                height={256}
+                className='w-full h-full rounded-sm'
+                width={400}
+                height={400}
                 />
             </div>
         </div>
