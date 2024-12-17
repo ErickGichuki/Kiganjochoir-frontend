@@ -11,7 +11,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center mb-12 gap-12">
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-2xl font-bold mb-4 text-blue-600">
-              Our Story
+              Our Success Story
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg">
               Founded with the aim of praising the Lord and preaching the gospel
@@ -22,6 +22,7 @@ function About() {
               <span className="italic">
                 "If they keep quiet, the stones will cry out."
               </span>
+              <span className='text-red-400 ml-4'>(Luke 19:40)</span>
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
