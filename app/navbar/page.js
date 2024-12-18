@@ -16,12 +16,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-blue-400 top-0 left-0 w-full z-50">
+      <div className="bg-blue-600 top-0 left-0 w-full z-50">
         <div className="flex justify-between items-center px-4 py-4">
           <div className="flex items-center space-x-4">
             <img src="/logo.png" alt="logo" className="w-12 h-12 rounded-full" />
-            <Link href="/" className="text-xl font-bold">
-              SDA Kiganjo <span className="text-purplefortitle">Church Choir</span>
+            <Link href="/" className="text-xl text-white font-bold">
+              SDA Kiganjo <span className="text-white">Church Choir</span>
             </Link>
           </div>
           <div className='hidden md:flex space-x-8 text-md'>
@@ -47,9 +47,9 @@ function Navbar() {
             aria-expanded={isOpen}
           >
             <div className={`hamburger ${isOpen ? 'open' : ''}`}>
-              <span className="block w-6 h-0.5 bg-gray-800 mb-1 transition-all duration-300"></span>
-              <span className="block w-6 h-0.5 bg-gray-800 mb-1 transition-all duration-300"></span>
-              <span className="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+              <span className="block w-6 h-0.5 bg-white mb-1 transition-all duration-300"></span>
+              <span className="block w-6 h-0.5 bg-white mb-1 transition-all duration-300"></span>
+              <span className="block w-6 h-0.5 bg-white transition-all duration-300"></span>
             </div>
           </button>
         </div>
