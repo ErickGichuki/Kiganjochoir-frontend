@@ -16,7 +16,7 @@ function Hero() {
                     setText((prevText) => prevText + currentChar);
                 }
                 if (index < fullText.length / 3) {
-                    setColor('text-red-600');
+                    setColor('text-white');
                 } else if (index < (2 * fullText.length) / 3){
                     setColor('text-violet-600');
                 } else {

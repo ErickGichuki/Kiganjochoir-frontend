@@ -57,27 +57,27 @@ function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-blue-400 transform ${
+        className={`fixed top-0 left-0 h-full w-64 bg-blue-600 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 z-40 shadow-lg`}
       >
         <div className="p-6 flex flex-col space-y-6 items-center justify-center">
           <button
-            className="self-end py-2 bg-yellow-500 rounded-full px-4 focus:outline-none"
+            className="self-end py-2 bg-yellow-500 rounded-full px-4 text-white focus:outline-none"
             onClick={closeSidebar}
           >
             Close
           </button>
-          <Link href="/" className="text-lg font-medium hover:text-gray-700" onClick={closeSidebar}>
+          <Link href="/" className="text-lg font-medium text-white hover:text-gray-700" onClick={closeSidebar}>
             Home
           </Link>
-          <Link href="/aboutus" className="text-lg font-medium hover:text-gray-700" onClick={closeSidebar}>
+          <Link href="/aboutus" className="text-lg font-medium text-white hover:text-gray-700" onClick={closeSidebar}>
             About Us
           </Link>
-          <Link href="/recordedsongs" className="text-lg font-medium hover:text-gray-700" onClick={closeSidebar}>
+          <Link href="/recordedsongs" className="text-lg font-medium text-white hover:text-gray-700" onClick={closeSidebar}>
             Songs
           </Link>
-          <Link href="/contact" className="text-lg font-medium hover:text-gray-700" onClick={closeSidebar}>
+          <Link href="/contact" className="text-lg font-medium text-white hover:text-gray-700" onClick={closeSidebar}>
             Contact
           </Link>
           <Link
