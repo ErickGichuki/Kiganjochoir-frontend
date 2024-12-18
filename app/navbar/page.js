@@ -63,7 +63,7 @@ function Navbar() {
       >
         <div className="p-6 flex flex-col space-y-6 items-center justify-center">
           <button
-            className="self-end py-2 bg-yellow-500 rounded-full px-4 text-white focus:outline-none"
+            className="self-end py-2  bg-gray-500 rounded-xl px-4 text-white focus:outline-none"
             onClick={closeSidebar}
           >
             Close
