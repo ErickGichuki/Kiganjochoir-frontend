@@ -7,7 +7,33 @@ function Page() {
     const [songs, setSongs] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [text, setText] = useState('');
+    const [color, setColor] = useState('text-red-600');
+    const fullText = 'May these songs bless you, touch you and prepare you for the soon return of Jesus.'
     
+    useEffect(()=>{
+            let index = 0;
+            const intervalId = setInterval(() => {
+                if (index < fullText.length) {
+                    const currentChar = fullText[index];
+                    if (currentChar) {
+                        setText((prevText) => prevText + currentChar);
+                    }
+                    if (index < fullText.length / 3) {
+                        setColor('text-blue-600');
+                    } else if (index < (2 * fullText.length) / 3){
+                        setColor('text-violet-600');
+                    } else {
+                        setColor('text-black');
+                    }
+                    index += 1;
+                } else{
+                    clearInterval(intervalId);
+                }
+            }, 100);
+            return () => clearInterval(intervalId);
+        }, []);
+
     useEffect(() =>{
       const fetchSongs = async () => {
         try {
@@ -28,8 +54,8 @@ function Page() {
 
   return (
     <div className='bg-gradient-to-r from-blue-200 via-yellow-300 to-green-300 py-10'>
-      <h2 className='font-bold text-center text-2xl text-blue-700 my-6'>
-        SDA Kiganjo Church Choir Songs
+      <h2 className={`font-bold text-center text-lg text-blue-700 mx-auto my-6 ${color}`}>
+        {text}
       </h2>
       
       {loading ? (
