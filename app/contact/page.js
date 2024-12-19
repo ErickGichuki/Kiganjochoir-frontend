@@ -44,8 +44,8 @@ function ContactPage() {
         <h2 className='text-3xl font-bold text-center mb-8'>Talk to us</h2>
         <div className='flex flex-col md:flex-row gap-8'>
             <div className='md:w-1/2'>
-                <h3 className='text-2xl font-semibold mb-4'>
-                    Heard us before? <span className='text-blue-500'>we proclaim the gospel of the kingdom</span>
+                <h3 className='text-xl font-semibold mb-4'>
+                    Heard us before? <span className='text-blue-500'>visit us on sabbath we love visitors, cherish visitors and ofcourse mean it. </span>
                 </h3>
                 <p className='text-lg text-gray-700 mb-8'>
                     If you got any question kindly get in touch with us so that we can help you and know more about Jesus.

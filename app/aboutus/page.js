@@ -18,7 +18,7 @@ function About() {
               through songs to all people, languages, tribes, and kindreds. God
               has been our guide in every step of our lives, and we have a
               reason to praise Him forever. We are commissioned to preach the
-              gospel. As Jesus said,{" "}
+              gospel rather than remaining quiet. As Jesus said,{" "}
               <span className="italic">
                 "If they keep quiet, the stones will cry out."
               </span>
@@ -45,8 +45,8 @@ function About() {
               Who We Are
             </h3>
             <p className="text-gray-600">
-              Seventh-Day Adventist church members spreading the word of God via
-              songs and hymns.
+              Seventh-Day Adventist Church members spreading the word of God via
+              Songs.
             </p>
           </div>
 

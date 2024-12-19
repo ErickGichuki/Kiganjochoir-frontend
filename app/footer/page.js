@@ -8,7 +8,7 @@ function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
             <div className='mb-4'>
                 <h3 className='text-xl font-bold mb-2'>SDA Kiganjo Church Choir</h3>
-                <p className='text-md'>We are a dedicated team in the ministry to propel the message of the three Angelss message to all the world in our generation. <br/>Rev 14:6-12</p>
+                <p className='text-md'>We are a dedicated team in the ministry to propel the message of the three Angel's message to all the world in our generation. <br/>Rev 14:6-12</p>
             </div>
             <div className='mb-4'>
                 <h3 className='text-lg font-bold mb-2'>Quick Links</h3>
